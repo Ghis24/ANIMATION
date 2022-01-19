@@ -231,3 +231,38 @@ hr{
 
     }
     
+    #menu{
+        margin:0 auto;
+        width:100px;
+        height:50px;
+        border:2px solid;
+        background:crimson;
+        border-radius:15%;
+        padding:5px;
+        animation:extension 4s linear infinte;
+    }
+
+    p{
+        justify-content: center;
+    }
+
+    #menu:hover{
+        transition:1s linear;
+        height:100px;   
+    }
+
+    #carroussel{
+       margin:0 auto;
+       width:500px;
+       height:450px;
+       border:1px solid;
+       animation:caroussel 4s liner infinite;
+    }
+
+    figure{
+        display:inline-block;
+        overflow:hidden;
+        justify-content: center;
+        padding:10px;
+    }
+
