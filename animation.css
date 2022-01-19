@@ -1,0 +1,181 @@
+*{
+    justify-content: center;
+}
+
+body{
+    border: border-box;
+    justify-content: center;
+}
+
+
+h1{
+    color:black;
+    text-align: center;
+    margin:15px;
+    padding:15px;
+}
+
+h2{
+    color:black;
+    text-align: center;
+    margin:15px;
+    padding:15px;
+}
+
+hr{
+    margin:10px;
+}
+
+#square{
+    width: 150px;
+    height:150px;
+    transition: background-color 4s,transform 1s;
+    background-color: red;
+    animation:square 6s linear infinite;
+}
+
+@keyframes square{
+    0% { transform:rotateZ(0deg);
+    background-color:red;}
+
+    100% { transform : rotateZ(360deg);
+        background-color:purple;}
+
+    /* from {transform : rotateZ (180deg);
+        background-color:violet;} */
+
+    /* from {transform :rotateZ (270deg);
+        background-color:blue;} */
+/* 
+    from {transform :rotateZ (360deg);
+        background-color:cadetblue;} */
+
+}
+
+#container{
+    width: 300px;
+    height: 300px;
+    border:2px solid;
+
+}
+
+#ball{
+    position:relative;
+    width:50px;
+    height:50px;
+    background-color: blueviolet;
+    border-radius: 100%;
+    animation:bounce 4s forwards infinite;
+}
+
+@keyframes bounce{
+    0%{top:0px;
+    left:0px;
+    
+    }
+    50%{
+        top:250px;
+        left:50px;
+    }
+
+    75%{
+        top:175px;
+        left:250px;
+    }
+
+    100%{
+        top:250px;
+        left:250px;
+    }
+      
+} 
+
+    #first{
+        position:relative;
+        display:inline-block;
+        padding:1px;
+        border:2px solid;
+        width: 50px;
+        height:50px;
+        border-radius: 100%;
+        animation:loader 4s linear infinite;
+    }
+
+    #second{
+        position:relative;
+        display: inline-block;
+        padding:1px;
+        border:2px solid;
+        width:50px;
+        height:50px;
+        border-radius:100%;
+        animation:loader 4s linear infinite;
+        animation-delay:  -1s;
+    }
+
+    #third{
+        position:relative;
+        padding:1px;
+        display:inline-block;
+        border:2px solid;
+        width: 50px;
+        height:50px;
+        border-radius:100%;
+        animation:loader 4s linear infinite;
+        animation-delay: -1s;
+    }
+
+@keyframes loader{
+    0%{
+    background-color:lightblue;
+    }
+
+    50%{
+        background-color: blue;
+    }
+
+    100%{
+        background-color:black;
+    }
+}
+    
+    #carre1{
+        position:relative;
+        display:inline-block;
+        width: 40px;
+        height:40px;
+        border: 1px solid;
+        background-color:lime;
+        animation:course 4s linear infinite;
+
+    }
+
+    #carre2{
+        position:relative;
+        display:inline-block;
+        width: 40px;
+        height:40px;
+        border:1px solid;
+        background-color: yellow;
+        animation:course 4s linear infinite;
+    }
+    #carre3{
+        position: relative;
+        display:inline-block;
+        width: 40px;
+        height:40px;
+        border:1px solid;
+        border-color: pink;
+        animation:course 4s linear infinite;
+    }
+    #carre4{
+        position:relative;
+        display:inline-block;
+        width: 40px;
+        height:40px;
+        border:1px solid;
+        background-color:red;
+        animation:course 4s linear infinite;
+    }
+    
+    
