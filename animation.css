@@ -1,22 +1,24 @@
 *{
-    justify-content: center;
+    box-sizing:border-box;
+    margin:0;
+    
 }
 
 body{
-    border: border-box;
-    justify-content: center;
+    background-color: black;
+    color:white;
 }
 
 
 h1{
-    color:black;
+    color:white;
     text-align: center;
     margin:15px;
     padding:15px;
 }
 
 h2{
-    color:black;
+    color:white;
     text-align: center;
     margin:15px;
     padding:15px;
@@ -27,6 +29,7 @@ hr{
 }
 
 #square{
+    margin:0 auto;
     width: 150px;
     height:150px;
     transition: background-color 4s,transform 1s;
@@ -41,22 +44,14 @@ hr{
     100% { transform : rotateZ(360deg);
         background-color:purple;}
 
-    /* from {transform : rotateZ (180deg);
-        background-color:violet;} */
-
-    /* from {transform :rotateZ (270deg);
-        background-color:blue;} */
-/* 
-    from {transform :rotateZ (360deg);
-        background-color:cadetblue;} */
-
 }
 
 #container{
+    margin:0 auto;
     width: 300px;
     height: 300px;
     border:2px solid;
-
+    
 }
 
 #ball{
@@ -73,14 +68,18 @@ hr{
     left:0px;
     
     }
-    50%{
+    25%{
         top:250px;
         left:50px;
     }
 
-    75%{
+    50%{
         top:175px;
         left:250px;
+    }
+
+    75%{
+
     }
 
     100%{
@@ -90,7 +89,15 @@ hr{
       
 } 
 
+    #contenant{
+        margin:0 auto;
+        width:175px;
+        height:80px;
+        border: 2px solid;
+    }
+
     #first{
+        margin:1px;
         position:relative;
         display:inline-block;
         padding:1px;
@@ -102,6 +109,7 @@ hr{
     }
 
     #second{
+        margin:1px;
         position:relative;
         display: inline-block;
         padding:1px;
@@ -114,6 +122,7 @@ hr{
     }
 
     #third{
+        margin:1px;
         position:relative;
         padding:1px;
         display:inline-block;
@@ -141,7 +150,8 @@ hr{
     
 
     #box{
-        position: relative;
+        margin:0 auto;
+        position:relative;
         width: 290px;
         height:290px;
         border:1px solid;
@@ -171,7 +181,7 @@ hr{
         width: 30px;
         height:30px;
         border:2px solid;
-        border-color: rgb(255, 46, 168);
+        background-color: rgb(255, 46, 168);
         animation:course 4s linear infinite;
         animation-delay:2s;
     }
