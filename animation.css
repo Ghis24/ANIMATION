@@ -139,43 +139,85 @@ hr{
     }
 }
     
+
+    #box{
+        position: relative;
+        width: 290px;
+        height:290px;
+        border:1px solid;
+    }
+
     #carre1{
-        position:relative;
-        display:inline-block;
-        width: 40px;
-        height:40px;
-        border: 1px solid;
+        position:absolute;
+        width: 30px;
+        height:30px;
+        border: 2px solid;
         background-color:lime;
         animation:course 4s linear infinite;
 
     }
 
     #carre2{
-        position:relative;
-        display:inline-block;
-        width: 40px;
-        height:40px;
-        border:1px solid;
+        position:absolute;
+        width: 30px;
+        height:30px;
+        border:2px solid;
         background-color: yellow;
         animation:course 4s linear infinite;
+        animation-delay: 1s;
     }
     #carre3{
-        position: relative;
-        display:inline-block;
-        width: 40px;
-        height:40px;
-        border:1px solid;
-        border-color: pink;
+        position: absolute;
+        width: 30px;
+        height:30px;
+        border:2px solid;
+        border-color: rgb(255, 46, 168);
         animation:course 4s linear infinite;
+        animation-delay:2s;
     }
     #carre4{
-        position:relative;
-        display:inline-block;
-        width: 40px;
-        height:40px;
-        border:1px solid;
+        position:absolute;
+        width: 30px;
+        height:30px;
+        border:2px solid;
         background-color:red;
         animation:course 4s linear infinite;
+        animation-delay: 3s;
     }
-    
+
+    @keyframes course{
+        0%{
+            left:0px;
+            top:0px;   
+        }
+
+        25%{
+            transform:rotate(90deg);
+            left:260px;
+            top:0px;
+            background-color:royalblue;
+        }
+
+        50%{
+            left:260px;
+            top:260px;
+            transform:rotate(180deg);
+            background-color: blue;
+        }
+
+        75%{
+            top:260px;
+            left:0px;
+            transform:rotate(270deg);
+            background-color: red;
+        }
+
+        100%{
+            left:0px;
+            top:0px;
+            transform:rotate(360deg);
+            background-color: green;
+        }
+
+    }
     
