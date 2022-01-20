@@ -28,6 +28,7 @@ hr{
     margin:10px;
 }
 
+/* Carré */
 #square{
     margin:0 auto;
     width: 150px;
@@ -46,6 +47,8 @@ hr{
 
 }
 
+/* La Balle */
+
 #container{
     margin:0 auto;
     width: 300px;
@@ -56,8 +59,8 @@ hr{
 
 #ball{
     position:relative;
-    width:50px;
-    height:50px;
+    width:49px;
+    height:49px;
     background-color: blueviolet;
     border-radius: 100%;
     animation:bounce 4s forwards infinite;
@@ -66,28 +69,31 @@ hr{
 @keyframes bounce{
     0%{top:0px;
     left:0px;
-    
     }
+
     25%{
         top:250px;
-        left:50px;
+        left:100px;
     }
 
     50%{
-        top:175px;
+        top:100px;
         left:250px;
     }
 
     75%{
-
+        top:0px;
+        left:0px;
     }
 
     100%{
         top:250px;
-        left:250px;
+        left:100px;
     }
       
 } 
+
+/* Loader */
 
     #contenant{
         margin:0 auto;
@@ -148,6 +154,7 @@ hr{
     }
 }
     
+/* La Course */
 
     #box{
         margin:0 auto;
@@ -230,6 +237,8 @@ hr{
         }
 
     }
+
+   /* Le Menu  */
     
     #menu{
         margin:0 auto;
@@ -251,18 +260,85 @@ hr{
         height:100px;   
     }
 
-    #carroussel{
+
+    /* Le caroussel */
+    .carrousel{
        margin:0 auto;
-       width:500px;
-       height:450px;
+       width: 400px;
+       height: 325px;
        border:1px solid;
-       animation:caroussel 4s liner infinite;
+       position : relative;
+       perspective :1000px;
+       animation:carousel 4s liner infinite;
     }
 
-    figure{
-        display:inline-block;
-        overflow:hidden;
-        justify-content: center;
+    .boxcarousel{
+        width:100%;
+        height:100%;
+        position:absolute;
         padding:10px;
+        display: inline-block;
+    }
+    
+
+    .box1{
+        width:200px;
+        height:150px;
+        border:1px solid white;
+        background:chartreuse
     }
 
+    .box2{
+        width:200px;
+        height:150px;
+        border:1px solid white;
+        background-color: chocolate ;
+    }
+
+    .box3{
+        width:200px;
+        height:150px;
+        border:1px solid white;
+        background-color: darkgreen;
+    }
+
+    .box4{
+        width:200px;
+        height:150px;
+        border:1px solid white;
+        background-color: darkmagenta;
+    }
+
+    .box5{
+        width:200px;
+        height:150px;
+        border:1px solid white;
+        background-color: greenyellow;
+    }
+
+    box:nth-child(1){
+        transform:rotateY(72deg);
+        
+    }
+
+    box:nth-child(2){
+        transform:rotateY(144deg);
+        
+    }
+    
+    box:nth-child(3){
+        transform:rotateY(221deg);
+    }
+
+    box:nth-child(4){
+        transform:rotateY(298deg);
+        
+    }
+
+    box:nth-child(5){
+        transform: scaleY(360deg);
+        
+    }
+@keyframes carousel{
+
+}
